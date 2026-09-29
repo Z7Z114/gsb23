@@ -1,0 +1,12 @@
+# 可选重型依赖：装齐后才会走真实推理；不装时后端走确定性离线分支。
+# 音频 DSP（/api/audio/process 需要）
+librosa==0.10.1
+numpy==1.24.3
+scipy==1.11.4
+soundfile==0.12.1
+# 语音识别与说话人分离（/api/meeting/process 需要）
+openai-whisper==20231117
+torch==2.1.2
+pyannote.audio==3.1.1
+# 云端摘要（已配置 OPENAI_API_KEY 时使用）
+openai==1.3.7
